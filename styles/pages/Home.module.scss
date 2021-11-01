@@ -1,0 +1,7 @@
+@import "../imports/colors";
+@import "../imports/sizes";
+@import "../imports/mixins";
+
+.home {
+  @include page;
+}
