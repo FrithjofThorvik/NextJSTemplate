@@ -40,7 +40,7 @@ const Product: FC<IProductProps> = ({ product }): JSX.Element => {
             src={product.image}
             alt={product.name}
             width={100}
-            height={100}
+            height={130}
           />
           <h1>{product.name}</h1>
           <p>{product.description}</p>
