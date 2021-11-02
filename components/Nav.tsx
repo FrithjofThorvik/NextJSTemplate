@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import { useUser } from "@auth0/nextjs-auth0";
+import Image from "next/image";
 import Link from "next/link";
 
 import styles from "../styles/components/Nav.module.scss";
@@ -20,6 +21,9 @@ const Nav: FC = (): JSX.Element => {
         <li>
           <Link href="/about">About</Link>
         </li>
+        <li>
+          <Link href="/products">Products</Link>
+        </li>
         <div className={styles.navRight}>
           {!user ? (
             <li>
@@ -30,7 +34,9 @@ const Nav: FC = (): JSX.Element => {
               <li>
                 <Link href="/api/auth/logout">Logout</Link>
               </li>
-              {user.picture && <img src={user.picture} alt="profile-picture" />}
+              {user.picture && (
+                <Image src={user.picture} alt="profile-picture" />
+              )}
             </>
           )}
         </div>
