@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import { Product } from "@prisma/client";
 import { GetServerSideProps, GetServerSidePropsContext } from "next";
+import Image from "next/image";
 
 import { IProductProps, IProductServerProps } from "../../types/pageInterfaces";
 import prisma from "../../db";
@@ -35,7 +36,7 @@ const Product: FC<IProductProps> = ({ product }): JSX.Element => {
     <div className={styles.product}>
       {product && (
         <div className={styles.productCard}>
-          <img src={product.image} alt={product.name} />
+          <Image src={product.image} alt={product.name} />
           <h1>{product.name}</h1>
           <p>{product.description}</p>
         </div>
