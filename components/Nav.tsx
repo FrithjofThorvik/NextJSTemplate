@@ -35,7 +35,12 @@ const Nav: FC = (): JSX.Element => {
                 <Link href="/api/auth/logout">Logout</Link>
               </li>
               {user.picture && (
-                <Image src={user.picture} alt="profile-picture" />
+                <Image
+                  src={user.picture}
+                  alt="profile-picture"
+                  width={30}
+                  height={30}
+                />
               )}
             </>
           )}

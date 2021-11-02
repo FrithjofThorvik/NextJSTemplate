@@ -36,7 +36,12 @@ const Product: FC<IProductProps> = ({ product }): JSX.Element => {
     <div className={styles.product}>
       {product && (
         <div className={styles.productCard}>
-          <Image src={product.image} alt={product.name} />
+          <Image
+            src={product.image}
+            alt={product.name}
+            width={100}
+            height={100}
+          />
           <h1>{product.name}</h1>
           <p>{product.description}</p>
         </div>
