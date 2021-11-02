@@ -1,14 +1,10 @@
 import React, { FC } from "react";
 import { UserProvider } from "@auth0/nextjs-auth0";
 
+import { IAppProps } from "../types/pageInterfaces";
 import Layout from "../components/Layout";
 
 import "../styles/globals.scss";
-
-interface IAppProps {
-  Component: any;
-  pageProps: any;
-}
 
 /**
  * The main component for entire application.
