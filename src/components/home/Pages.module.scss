@@ -1,0 +1,8 @@
+@import "@/styles/imports/colors";
+@import "@/styles/imports/mixins";
+
+.pages {
+  @include flexCenter;
+  flex-wrap: wrap;
+  gap: 2rem;
+}

@@ -1,0 +1,21 @@
+@import "@/styles/imports/colors";
+@import "@/styles/imports/mixins";
+
+.background {
+  .circle1,
+  .circle2 {
+    filter: blur(100px);
+    position: absolute;
+    background: radial-gradient(rgba($coral, 0.5), transparent);
+    width: 20vw;
+    height: 20vw;
+  }
+  .circle1 {
+    top: -5%;
+    right: -5%;
+  }
+  .circle2 {
+    top: 50%;
+    left: -5%;
+  }
+}

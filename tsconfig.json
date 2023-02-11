@@ -1,5 +1,16 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/db/*": ["src/db/*"],
+      "@/pages/*": ["src/pages/*"],
+      "@/styles/*": ["src/styles/*"],
+      "@/types/*": ["src/types/*"],
+      "@/utils/*": ["src/utils/*"],
+      "@/prisma/*": ["src/prisma/*"],
+      "@/hooks/*": ["src/hooks/*"],
+      "@/components/*": ["src/components/*"]
+    },
     "allowJs": true,
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
@@ -26,7 +37,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "pages/api/auth/[...auth0].ts"
+    "src/pages/api/auth/[...auth0].ts"
   ],
   "exclude": ["node_modules"]
 }

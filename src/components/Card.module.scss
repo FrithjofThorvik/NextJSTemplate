@@ -1,0 +1,62 @@
+@import "@/styles/imports/colors";
+
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 0.05rem solid rgba($coral, 0.3);
+  box-shadow: 0 0 0.3rem 0.2rem rgba($coral, 0.05);
+  width: 10rem;
+  height: 12rem;
+  padding: 0.6rem;
+  border-radius: 1rem;
+  transition: box-shadow ease-in-out 100ms;
+
+  .top {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 40%;
+
+    .icon {
+      color: $coral;
+      filter: drop-shadow(0 0 0.4rem $coral);
+    }
+
+    .emoji {
+      filter: drop-shadow(0 0 0.4rem rgba($coral, 0.7));
+      font-size: 1.25rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .title {
+      color: $coral;
+      text-shadow: 0 0 0.4rem $coral;
+      font-weight: 500;
+      font-size: 0.75rem;
+    }
+  }
+
+  .bottom {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 60%;
+    padding: 0.3rem;
+
+    .description {
+      color: $gray;
+      font-size: 0.75rem;
+      font-weight: 100;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: none;
+    border: 0.05rem solid rgba($coral, 0.6);
+  }
+}

@@ -1,0 +1,12 @@
+@import "./colors";
+@import "./sizes";
+
+@mixin page {
+  display: flex;
+}
+
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
